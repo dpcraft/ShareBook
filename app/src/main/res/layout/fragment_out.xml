@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="60dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_out"
+        android:text="快传撒，学妹等着买呢！"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/blue"
+        android:layout_marginBottom="60sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
+        android:id="@+id/button_bar_code_upload"
+        android:background="@drawable/whitebuttonshape"
+        android:drawableTop="@drawable/bar_code"
+        android:text="条形码上传"
+        android:textColor="@color/blue"
+        android:textSize="25sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_camera_upload"
+        android:background="@drawable/whitebuttonshape"
+        android:drawableTop="@drawable/camera"
+        android:text="照片上传"
+        android:textColor="@color/blue"
+        android:textSize="25sp"/>
+
+</LinearLayout>

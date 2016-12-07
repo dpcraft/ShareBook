@@ -30,7 +30,7 @@ public class FindFragment extends Fragment{
         Bundle bundle = getArguments();
         String agrs1 = bundle.getString("agrs1");
         TextView tv = (TextView)view.findViewById(R.id.tv_find);
-        //tv.setText(agrs1);
+        tv.setText(agrs1);
         return view;
         }
 }

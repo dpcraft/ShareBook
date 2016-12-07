@@ -119,15 +119,12 @@
         android:layout_height="48dp"
         android:layout_gravity="center"
         android:id="@+id/wechat_login"
-        android:background="@drawable/wechat"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:gravity="center"
+        android:background="@drawable/whitebuttonshape"
+        android:drawableTop="@drawable/wechat"
         android:text="微信登录"
-        android:textSize="12dp"
+        android:textSize="12sp"
         android:textColor="@color/black"/>
+
 
 
 </LinearLayout>
