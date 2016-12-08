@@ -5,16 +5,16 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:paddingBottom="60dp">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_out"
-        android:text="快传撒，学妹等着买呢！"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        android:background="@color/blue"
-        android:layout_marginBottom="60sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_out"
+            android:text="快传撒，学妹等着买呢！"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:layout_marginBottom="60sp"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

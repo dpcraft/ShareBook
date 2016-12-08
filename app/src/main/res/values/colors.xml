@@ -7,4 +7,5 @@
     <color name="black">#000000</color>
     <color name="blue">#0033FF</color>
     <color name="orange">#FF6600</color>
+    <color name="red">#FF0033</color>
 </resources>

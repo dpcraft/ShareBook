@@ -1,23 +1,24 @@
 package cn.dpcraft.sharebook;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by DPC on 2016/12/6.
  */
 public class FindFragment extends Fragment{
-    public static FindFragment newInstance(String param1) {
-        FindFragment fragment = new FindFragment();
-        Bundle args = new Bundle();
-        args.putString("agrs1", param1);
-        fragment.setArguments(args);
-        return fragment;
-        }
+    private List<BookPreview> bookPreviewList = new ArrayList<BookPreview>();
+    private  ListView listView;
+    private BookAdapter bookAdapter;
     public FindFragment() {
         }
     @Override
@@ -27,10 +28,20 @@ public class FindFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_find, container, false);
-        Bundle bundle = getArguments();
-        String agrs1 = bundle.getString("agrs1");
-        TextView tv = (TextView)view.findViewById(R.id.tv_find);
-        tv.setText(agrs1);
+        initBook();
+        listView = (ListView) view.findViewById(R.id.find_list_view);
+        listView.setAdapter(bookAdapter);
         return view;
         }
+    @Override
+    public void onAttach(Activity activity){
+        super.onAttach(activity);
+        bookAdapter = new BookAdapter(activity,R.layout.book_preview_item,bookPreviewList);
+
+    }
+    private void initBook(){
+        for(int i = 0;i < 10; i++){
+            bookPreviewList.add(new BookPreview());
+        }
+    }
 }

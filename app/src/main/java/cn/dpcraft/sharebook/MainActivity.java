@@ -39,7 +39,7 @@ public class MainActivity extends Activity implements BottomNavigationBar.OnTabS
     private void setDefaultFragment() {
         FragmentManager fm = getFragmentManager();
         FragmentTransaction transaction = fm.beginTransaction();
-        findFragment = FindFragment.newInstance("找书");
+        findFragment = new FindFragment();
         transaction.replace(R.id.tabs, findFragment);
         transaction.commit();
         }
@@ -47,17 +47,18 @@ public class MainActivity extends Activity implements BottomNavigationBar.OnTabS
     public void onTabSelected(int position){
         FragmentManager fm = this.getFragmentManager();
         FragmentTransaction transaction = fm.beginTransaction();
+        findFragment = new FindFragment();
+        outFragment = new OutFragment();
+        userFragment = new UserFragment();
         switch (position){
             case 0:
-                if(findFragment == null){
-                    findFragment = FindFragment.newInstance("找书");
-                }
                 transaction.replace(R.id.tabs,findFragment);
                 break;
             case 1:
-                outFragment = new OutFragment();
                 transaction.replace(R.id.tabs,outFragment);
                 break;
+            case 3:
+                transaction.replace(R.id.tabs,userFragment);
             default:
                 break;
         }

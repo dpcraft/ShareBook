@@ -2,13 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:id="@+id/tv_find"
-        android:text="找书"
-        android:textSize="40sp"
-        android:textColor="@color/orange"/>
+   <ListView
+       android:id="@+id/find_list_view"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+   </ListView>
 
 </LinearLayout>
