@@ -7,17 +7,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Created by DPC on 2016/12/6.
  */
 public class FindFragment extends Fragment{
     private List<BookPreview> bookPreviewList = new ArrayList<BookPreview>();
-    private  ListView listView;
+    private List<Objects> drawerList = new ArrayList<Objects>();
+    private  ListView bookListView;
     private BookAdapter bookAdapter;
     public FindFragment() {
         }
@@ -29,8 +32,8 @@ public class FindFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_find, container, false);
         initBook();
-        listView = (ListView) view.findViewById(R.id.find_list_view);
-        listView.setAdapter(bookAdapter);
+        bookListView = (ListView) view.findViewById(R.id.find_list_view);
+        bookListView.setAdapter(bookAdapter);
         return view;
         }
     @Override
@@ -44,4 +47,5 @@ public class FindFragment extends Fragment{
             bookPreviewList.add(new BookPreview());
         }
     }
+
 }

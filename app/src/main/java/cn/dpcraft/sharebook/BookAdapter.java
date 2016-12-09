@@ -17,7 +17,7 @@ public class BookAdapter extends ArrayAdapter<BookPreview>{
     private int resourceId;
     public BookAdapter(Context context,int textViewResourceId,List<BookPreview> objects){
         super(context,textViewResourceId,objects);
-        resourceId =textViewResourceId;
+        resourceId = textViewResourceId;
     }
     @Override
     public View getView(int position,View convertView,ViewGroup parent){

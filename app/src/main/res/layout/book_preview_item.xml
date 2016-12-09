@@ -9,7 +9,6 @@
         android:id="@+id/book_preview_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_belonged"
         />
     <LinearLayout
         android:layout_width="wrap_content"
@@ -22,7 +21,6 @@
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
             android:paddingLeft="10dp"
-            android:text="从你的全世界路过"
             android:textSize="@dimen/traditional_font_size"
             android:textColor="@color/blue"/>
         <LinearLayout
@@ -35,7 +33,6 @@
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
             android:paddingLeft="10dp"
-            android:text="张嘉佳"
             android:textSize="@dimen/little_font_size"
             android:textColor="@color/black"/>
             <TextView
@@ -54,7 +51,6 @@
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
             android:paddingLeft="10dp"
-            android:text="湖南文艺出版社"
             android:textSize="@dimen/little_font_size"
             android:textColor="@color/black"/>
         <LinearLayout
@@ -75,7 +71,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
-                android:text="9.99"
                 android:textSize="@dimen/traditional_font_size"
                 android:textColor="@color/red"/>
         </LinearLayout>

@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Window;
 
+import com.ashokvarma.bottomnavigation.BadgeItem;
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 
@@ -25,11 +26,16 @@ public class MainActivity extends Activity implements BottomNavigationBar.OnTabS
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
+        assignViews();
+    }
+    private void assignViews(){
         bottomNavigationBar = (BottomNavigationBar)findViewById(R.id.bottom_navigation_bar);
+        bottomNavigationBar.setMode(BottomNavigationBar.MODE_FIXED);
+        bottomNavigationBar.setBackgroundStyle(BottomNavigationBar.BACKGROUND_STYLE_RIPPLE);
         bottomNavigationBar
-                .addItem(new BottomNavigationItem(R.drawable.ic_menu_find_on,"找书").setActiveColor(R.color.orange))
+                .addItem(new BottomNavigationItem(R.drawable.ic_menu_find,"找书").setActiveColor(R.color.orange))
                 .addItem(new BottomNavigationItem(R.drawable.ic_menu_out_off,"出书").setActiveColor(R.color.blue))
-                .addItem(new BottomNavigationItem(R.drawable.ic_menu_req_on,"求书").setActiveColor(R.color.black))
+                .addItem(new BottomNavigationItem(R.drawable.ic_menu_req_on,"求书").setActiveColor(R.color.red))
                 .addItem(new BottomNavigationItem(R.drawable.ic_menu_user_on,"我的").setActiveColor(R.color.white))
                 .setFirstSelectedPosition(lastSelectedPosition)
                 .initialise();
