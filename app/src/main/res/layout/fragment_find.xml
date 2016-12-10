@@ -9,7 +9,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
-            android:orientation="vertical" android:layout_width="match_parent"
+            android:id="@+id/drawer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
             <LinearLayout
                 android:id="@+id/find_page_title_bar"
@@ -18,18 +20,18 @@
                 android:orientation="horizontal"
                 android:background="@color/blue">
                 <Button
-                    android:id="@+id/search_edit_first"
+                    android:id="@+id/button_search_edit"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
                     android:layout_margin="7dp"
                     android:padding="5dp"
-                    android:cursorVisible="false"
                     android:drawableLeft="@drawable/ic_search"
                     android:background="@drawable/whitebuttonshape"
                     android:hint="书名/关键词"
                     android:textSize="@dimen/traditional_font_size"/>
                 <Button
+                    android:id="@+id/button_filtration"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -53,7 +55,7 @@
         android:layout_gravity="end"
         android:divider="@color/blue"
         android:dividerHeight="0dp"
-        android:background="@color/white">
+        android:background="@color/black">
 
     </ListView>
 </android.support.v4.widget.DrawerLayout>

@@ -7,12 +7,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ListView;
+
+import java.util.List;
+import java.util.Map;
 
 
 /**
  * Created by DPC on 2016/12/6.
  */
 public class UserFragment extends Fragment{
+    private ListView listView; // 声明列表视图对象
+    private List<Map<String, Object>> list;// 声明列表容器
 
     public UserFragment() {
     }
