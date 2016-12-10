@@ -4,4 +4,6 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="traditional_font_size">20sp</dimen>
     <dimen name="little_font_size">15sp</dimen>
+    <dimen name="toolBar_font_size">30sp</dimen>
+    <dimen name="userInfo_font_size">30sp</dimen>
 </resources>
