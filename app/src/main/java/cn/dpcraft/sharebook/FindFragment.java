@@ -59,12 +59,18 @@ public class FindFragment extends Fragment{
         filtrationDrawerLayout = (DrawerLayout) getActivity().findViewById(R.id.find_page_drawer_layout);
         filtrationDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
         filtrationDrawerLayout.setScrimColor(0x00000000);
-
         Button buttonFiltration = (Button) getActivity().findViewById(R.id.button_filtration);
+        Button buttonSerchEdit = (Button)getActivity().findViewById(R.id.button_search_edit);
         buttonFiltration .setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                filtrationDrawerLayout.openDrawer(Gravity.RIGHT);
+            }
+        });
+        buttonSerchEdit .setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SearchActivity.actionStart(getActivity(),"data1","data2");
             }
         });
 
