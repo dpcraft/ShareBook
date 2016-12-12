@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
+        <LinearLayout
+            android:id="@+id/user_page_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/blue">
+            <Button
+                android:id="@+id/button_search_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_margin="7dp"
+                android:padding="5dp"
+                android:drawableLeft="@drawable/ic_search"
+                android:background="@drawable/whitebuttonshape"
+                android:hint="书名/关键词"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/traditional_font_size"/>
+            <Button
+                android:id="@+id/button_add"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_add_32"
+                android:background="#00000000" />
+        </LinearLayout>
+    <ListView
+        android:id="@+id/lv_request"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:id="@+id/tv_request"
-        android:text="求书"
-        android:textSize="40sp"
-        android:textColor="@color/orange"/>
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        </ListView>
+
 
 </LinearLayout>

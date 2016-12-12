@@ -7,8 +7,9 @@
     <TextView  android:gravity="center"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="用户注册"
-        android:textSize="30sp"
+        android:layout_marginTop="15dp"
+        android:text="求书信息填写"
+        android:textSize="@dimen/toolBar_font_size"
         android:textColor="@color/black" />
     <LinearLayout android:orientation="horizontal"
         android:layout_width="fill_parent"
@@ -17,13 +18,13 @@
         <TextView  android:gravity="right"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="用户名："
-            android:textSize="20sp"
+            android:text="书名："
+            android:textSize="@dimen/traditional_font_size"
             android:textColor="@color/black"/>
         <EditText
+            android:id="@+id/et_book_name"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/username"
             android:background="@drawable/editshape"
             android:maxLines="1"/>
     </LinearLayout>
@@ -34,15 +35,46 @@
         <TextView  android:gravity="right"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="密    码："
-            android:textSize="20sp"
+            android:text="交易方式："
+            android:textSize="@dimen/traditional_font_size"
+            android:textColor="@color/black"/>
+        <CheckBox
+            android:id="@+id/cb_request_rent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="求租"
+            android:textSize="@dimen/traditional_font_size"
+            android:textColor="@color/black"
+            android:focusable="false"
+            />
+        <CheckBox
+            android:id="@+id/cb_request_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="求售"
+            android:textSize="@dimen/traditional_font_size"
+            android:textColor="@color/black"
+            android:focusable="false"
+            />
+
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TextView  android:gravity="right"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="价格："
+            android:textSize="@dimen/traditional_font_size"
             android:textColor="@color/black"/>
         <EditText
+            android:id="@+id/et_book_price"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/password"
             android:background="@drawable/editshape"
-            android:password="true"
             android:maxLines="1"/>
     </LinearLayout>
     <LinearLayout android:orientation="horizontal"
@@ -52,17 +84,50 @@
         <TextView  android:gravity="right"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="确认密码："
+            android:text="押金："
+            android:textSize="@dimen/traditional_font_size"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/et_cash_pledge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editshape"
+            android:maxLines="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TextView  android:gravity="right"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="期限："
             android:textSize="20sp"
             android:textColor="@color/black"/>
         <EditText
+            android:id="@+id/et_period"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/check_password"
             android:background="@drawable/editshape"
-            android:password="true"
             android:maxLines="1"/>
-        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TextView  android:gravity="right"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="备注："
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/et_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editshape"
+           android:maxLength="100"/>
+    </LinearLayout>
     <LinearLayout android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -74,15 +139,15 @@
             android:textSize="20sp"
             android:textColor="@color/black"/>
         <EditText
+            android:id="@+id/phone_number"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="5"
-            android:id="@+id/phone_number"
+
             android:background="@drawable/editshape"
-            android:password="true"
             android:maxLines="1"/>
         <Button
-            android:id="@+id/Button_get_verf_code"
+            android:id="@+id/Bottom_get_verf_code"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
@@ -99,14 +164,13 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="验证码："
-            android:textSize="20sp"
+            android:textSize="@dimen/traditional_font_size"
             android:textColor="@color/black"/>
         <EditText
+            android:id="@+id/et_verf_code"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/verfcode"
             android:background="@drawable/editshape"
-            android:password="true"
             android:maxLines="1"/>
     </LinearLayout>
     <LinearLayout
@@ -121,7 +185,7 @@
             android:id="@+id/login"
             android:background="@drawable/buttonshape"
             android:text="提  交"
-            android:textSize="20sp"
+            android:textSize="@dimen/traditional_font_size"
             android:textColor="@color/white"/>
     </LinearLayout>
 </LinearLayout>

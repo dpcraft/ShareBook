@@ -29,6 +29,10 @@ public class MainActivity extends Activity implements BottomNavigationBar.OnTabS
         super.onCreate(savedInstanceState);
       //  requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
+        findFragment = new FindFragment();
+        outFragment = new OutFragment();
+        requestFragment = new RequestFragment();
+        userFragment = new UserFragment();
         assignViews();
 
     }
@@ -57,15 +61,16 @@ public class MainActivity extends Activity implements BottomNavigationBar.OnTabS
     public void onTabSelected(int position){
         FragmentManager fm = this.getFragmentManager();
         FragmentTransaction transaction = fm.beginTransaction();
-        findFragment = new FindFragment();
-        outFragment = new OutFragment();
-        userFragment = new UserFragment();
+
         switch (position){
             case 0:
                 transaction.replace(R.id.tabs,findFragment);
                 break;
             case 1:
                 transaction.replace(R.id.tabs,outFragment);
+                break;
+            case 2:
+                transaction.replace(R.id.tabs,requestFragment);
                 break;
             case 3:
                 transaction.replace(R.id.tabs,userFragment);

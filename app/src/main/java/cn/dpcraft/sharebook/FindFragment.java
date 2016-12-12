@@ -27,13 +27,10 @@ import java.util.Objects;
 public class FindFragment extends Fragment{
     private DrawerLayout filtrationDrawerLayout;
     private ListView listView; // 声明列表视图对象
-    private List<Map<String, Object>> list;// 声明列表容器
     private List<BookPreview> bookPreviewList = new ArrayList<BookPreview>();
-    private List<Objects> drawerList = new ArrayList<Objects>();
     private  ListView bookListView;
     private BookAdapter bookAdapter;
-    public FindFragment() {
-        }
+    public FindFragment() {}
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,14 +57,14 @@ public class FindFragment extends Fragment{
         filtrationDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
         filtrationDrawerLayout.setScrimColor(0x00000000);
         Button buttonFiltration = (Button) getActivity().findViewById(R.id.button_filtration);
-        Button buttonSerchEdit = (Button)getActivity().findViewById(R.id.button_search_edit);
+        Button buttonSearchEdit = (Button)getActivity().findViewById(R.id.button_search_edit);
         buttonFiltration .setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                filtrationDrawerLayout.openDrawer(Gravity.RIGHT);
             }
         });
-        buttonSerchEdit .setOnClickListener(new View.OnClickListener() {
+        buttonSearchEdit .setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 SearchActivity.actionStart(getActivity(),"data1","data2");
@@ -85,8 +82,6 @@ public class FindFragment extends Fragment{
         listView = (ListView)getActivity().findViewById(R.id.find_page_filtration_list);
         ArrayList<ListItem> list_GroupItem = new ArrayList<ListItem>();
         UniversalAdapter mAdapter_ListGroup = new UniversalAdapter(getActivity(), list_GroupItem);
-      /*  mAdapter_ListGroup.AddType(R.layout.item1);
-        mAdapter_ListGroup.AddType(R.layout.item2);*/
         mAdapter_ListGroup.AddType(R.layout.price_item);
         mAdapter_ListGroup.AddType(R.layout.deal_type_item);
         mAdapter_ListGroup.AddType(R.layout.book_type_title_item);
@@ -110,40 +105,10 @@ public class FindFragment extends Fragment{
         list_GroupItem.add(new ListItem(4, getHashMap0()));
 
 
-
-
-
-
-
-
-
-      /*  list_GroupItem.add(new ListItem(0, getHashMap0("Item0","111")));
-        list_GroupItem.add(new ListItem(1, getHashMap1("Item1-111")));
-        list_GroupItem.add(new ListItem(1, getHashMap1("Item1-121")));
-
-        list_GroupItem.add(new ListItem(0, getHashMap0("Item0","222")));
-        list_GroupItem.add(new ListItem(1, getHashMap1("Item1-222")));
-        list_GroupItem.add(new ListItem(1, getHashMap1("Item1-232")));
-
-        list_GroupItem.add(new ListItem(0, getHashMap0("Item0","333")));
-        list_GroupItem.add(new ListItem(1, getHashMap1("Item1-333")));
-        list_GroupItem.add(new ListItem(1, getHashMap1("Item1-232")));*/
-
         mAdapter_ListGroup.notifyDataSetChanged();
     }
 
-   /* private HashMap<Integer, Object> getHashMap0(String s1, String s2) {
-        HashMap<Integer, Object> map1 = new HashMap<Integer, Object>();
-        map1.put(R.id.bigtv, s1);
-        map1.put(R.id.smalltv, s2);
-        return map1;
-    }
 
-    private HashMap<Integer, Object> getHashMap1(String s) {
-        HashMap<Integer, Object> map1 = new HashMap<Integer, Object>();
-        map1.put(R.id.textView1, s);
-        return map1;
-    }*/
     private HashMap<Integer, Object> getHashMap0() {
         HashMap<Integer, Object> map1 = new HashMap<Integer, Object>();
         return map1;

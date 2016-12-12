@@ -22,6 +22,7 @@
         <activity android:name=".MyLikeActivity"/>
         <activity android:name=".MyHistoryActivity"/>
         <activity android:name=".SearchActivity"/>
+        <activity android:name=".RequestUploadActivity"/>
     </application>
 
 </manifest>
