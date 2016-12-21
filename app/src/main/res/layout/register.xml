@@ -25,6 +25,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/username"
             android:background="@drawable/editshape"
+            android:textColor="@color/black"
             android:maxLines="1"/>
     </LinearLayout>
     <LinearLayout android:orientation="horizontal"
@@ -42,6 +43,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/password"
             android:background="@drawable/editshape"
+            android:textColor="@color/black"
             android:password="true"
             android:maxLines="1"/>
     </LinearLayout>
@@ -60,6 +62,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/check_password"
             android:background="@drawable/editshape"
+            android:textColor="@color/black"
             android:password="true"
             android:maxLines="1"/>
         </LinearLayout>
@@ -79,6 +82,8 @@
             android:layout_weight="5"
             android:id="@+id/phone_number"
             android:background="@drawable/editshape"
+            android:textColor="@color/black"
+            android:phoneNumber="true"
             android:password="true"
             android:maxLines="1"/>
         <Button
@@ -106,6 +111,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/verfcode"
             android:background="@drawable/editshape"
+            android:textColor="@color/black"
             android:password="true"
             android:maxLines="1"/>
     </LinearLayout>

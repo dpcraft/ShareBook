@@ -30,6 +30,7 @@ public class FindFragment extends Fragment{
     private List<BookPreview> bookPreviewList = new ArrayList<BookPreview>();
     private  ListView bookListView;
     private BookAdapter bookAdapter;
+    private float alpha = 0.4f;
     public FindFragment() {}
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -56,6 +57,8 @@ public class FindFragment extends Fragment{
         filtrationDrawerLayout = (DrawerLayout) getActivity().findViewById(R.id.find_page_drawer_layout);
         filtrationDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
         filtrationDrawerLayout.setScrimColor(0x00000000);
+       // filtrationDrawerLayout.setAlpha(alpha);
+        
         Button buttonFiltration = (Button) getActivity().findViewById(R.id.button_filtration);
         Button buttonSearchEdit = (Button)getActivity().findViewById(R.id.button_search_edit);
         buttonFiltration .setOnClickListener(new View.OnClickListener() {

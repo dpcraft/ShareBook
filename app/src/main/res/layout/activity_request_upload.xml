@@ -26,6 +26,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/editshape"
+            android:textColor="@color/black"
             android:maxLines="1"/>
     </LinearLayout>
     <LinearLayout android:orientation="horizontal"
@@ -43,6 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            style="@style/NewCheckboxTheme"
             android:text="求租"
             android:textSize="@dimen/traditional_font_size"
             android:textColor="@color/black"
@@ -53,6 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            style="@style/NewCheckboxTheme"
             android:text="求售"
             android:textSize="@dimen/traditional_font_size"
             android:textColor="@color/black"
@@ -75,6 +78,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/editshape"
+            android:textColor="@color/black"
             android:maxLines="1"/>
     </LinearLayout>
     <LinearLayout android:orientation="horizontal"
@@ -92,6 +96,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/editshape"
+            android:textColor="@color/black"
             android:maxLines="1"/>
     </LinearLayout>
     <LinearLayout android:orientation="horizontal"
@@ -109,6 +114,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/editshape"
+            android:textColor="@color/black"
             android:maxLines="1"/>
     </LinearLayout>
     <LinearLayout android:orientation="horizontal"
@@ -126,6 +132,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/editshape"
+            android:textColor="@color/black"
            android:maxLength="100"/>
     </LinearLayout>
     <LinearLayout android:orientation="horizontal"
@@ -142,8 +149,8 @@
             android:id="@+id/phone_number"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="5"
-
+            android:layout_weight="4"
+            android:phoneNumber="true"
             android:background="@drawable/editshape"
             android:maxLines="1"/>
         <Button
@@ -171,6 +178,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/editshape"
+            android:textColor="@color/black"
             android:maxLines="1"/>
     </LinearLayout>
     <LinearLayout

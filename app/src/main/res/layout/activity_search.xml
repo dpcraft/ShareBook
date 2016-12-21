@@ -27,6 +27,7 @@
         android:background="@drawable/whitebuttonshape"
         android:hint="书名/关键词"
         android:textSize="@dimen/traditional_font_size"
+        android:textColor="@color/black"
         android:textColorHint="@color/hint_color"/>
     <Button
         android:id="@+id/button_search"
