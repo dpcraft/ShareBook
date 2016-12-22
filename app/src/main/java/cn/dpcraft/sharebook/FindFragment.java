@@ -58,7 +58,7 @@ public class FindFragment extends Fragment{
         filtrationDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
         filtrationDrawerLayout.setScrimColor(0x00000000);
        // filtrationDrawerLayout.setAlpha(alpha);
-        
+
         Button buttonFiltration = (Button) getActivity().findViewById(R.id.button_filtration);
         Button buttonSearchEdit = (Button)getActivity().findViewById(R.id.button_search_edit);
         buttonFiltration .setOnClickListener(new View.OnClickListener() {
@@ -91,8 +91,6 @@ public class FindFragment extends Fragment{
         mAdapter_ListGroup.AddType(R.layout.book_type_item);
         mAdapter_ListGroup.AddType(R.layout.drawer_button_item);
         listView.setAdapter(mAdapter_ListGroup);
-
-
         list_GroupItem.add(new ListItem(0, getHashMap0()));
         list_GroupItem.add(new ListItem(1, getHashMap0()));
         list_GroupItem.add(new ListItem(2, getHashMap0()));
