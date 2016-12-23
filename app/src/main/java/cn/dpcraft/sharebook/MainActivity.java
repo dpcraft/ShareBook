@@ -33,7 +33,7 @@ public class MainActivity extends Activity implements BottomNavigationBar.OnTabS
     private UserFragment userFragment;
     private int status =0;
     private static final int STOPSPLASH = 0;
-    private static final long SPLASHTIME = 5000;
+    private static final long SPLASHTIME = 1000;
     private Animation animationGone,myAnimationAlpha;
     private LinearLayout splash;
 
@@ -55,8 +55,8 @@ public class MainActivity extends Activity implements BottomNavigationBar.OnTabS
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-      //  requestWindowFeature(Window.FEATURE_NO_TITLE);
-        hintKbOne();
+         //requestWindowFeature(Window.FEATURE_NO_TITLE);
+        //hintKbOne();
         setContentView(R.layout.activity_main);
         findFragment = new FindFragment();
         outFragment = new OutFragment();
@@ -119,6 +119,11 @@ public class MainActivity extends Activity implements BottomNavigationBar.OnTabS
     public void onTabUnselected(int position){}
     @Override
     public void onTabReselected(int position){}
+  /*  @Override
+    protected void onResume(){
+        super.onResume();
+        hintKbOne();
+    }*/
     //关闭软键盘
     private void hintKbOne() {
         InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);

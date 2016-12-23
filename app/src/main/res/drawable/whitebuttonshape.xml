@@ -7,8 +7,4 @@
         android:bottomRightRadius="8px"
         android:bottomLeftRadius="8px"/>
     <solid android:color="@color/white"/>
-
-
-
-
 </shape>

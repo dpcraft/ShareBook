@@ -30,7 +30,7 @@ public class FindFragment extends Fragment{
     private List<BookPreview> bookPreviewList = new ArrayList<BookPreview>();
     private  ListView bookListView;
     private BookAdapter bookAdapter;
-    private float alpha = 0.4f;
+    //private float alpha = 0.4f;
     public FindFragment() {}
     @Override
     public void onCreate(Bundle savedInstanceState) {

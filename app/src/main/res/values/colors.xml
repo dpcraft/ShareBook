@@ -11,4 +11,5 @@
     <color name="hint_color">#999999</color>
     <color name="grey">#999999</color>
     <color name="light_green">#00FFFF</color>
+    <color name="transparent">#00000000</color>
 </resources>

@@ -4,13 +4,10 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@color/white">
-    <TextView  android:gravity="center"
-        android:layout_width="fill_parent"
+    <cn.dpcraft.sharebook.UserSubToolbar
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="求书信息填写"
-        android:textSize="@dimen/toolBar_font_size"
-        android:textColor="@color/black" />
+        ></cn.dpcraft.sharebook.UserSubToolbar>
     <LinearLayout android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
