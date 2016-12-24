@@ -123,11 +123,11 @@ public class SearchActivity extends Activity {
         listView = (ListView)findViewById(R.id.search_filtration_list                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          );
         ArrayList<ListItem> list_GroupItem = new ArrayList<ListItem>();
         UniversalAdapter mAdapter_ListGroup = new UniversalAdapter(SearchActivity.this, list_GroupItem);
-        mAdapter_ListGroup.AddType(R.layout.price_item);
-        mAdapter_ListGroup.AddType(R.layout.deal_type_item);
-        mAdapter_ListGroup.AddType(R.layout.book_type_title_item);
-        mAdapter_ListGroup.AddType(R.layout.book_type_item);
-        mAdapter_ListGroup.AddType(R.layout.drawer_button_item);
+        mAdapter_ListGroup.AddType(R.layout.item_price);
+        mAdapter_ListGroup.AddType(R.layout.item_deal_type);
+        mAdapter_ListGroup.AddType(R.layout.item_book_type_title);
+        mAdapter_ListGroup.AddType(R.layout.item_book_type);
+        mAdapter_ListGroup.AddType(R.layout.item_drawer_button);
         listView.setAdapter(mAdapter_ListGroup);
         list_GroupItem.add(new ListItem(0, getHashMap0()));
         list_GroupItem.add(new ListItem(1, getHashMap0()));

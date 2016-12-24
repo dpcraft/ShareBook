@@ -3,15 +3,15 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/user_sub_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:background="@color/blue">
         <Button
             android:id="@+id/tool_bar_button_back"
-            android:layout_width="50dp"
+            android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_back"
             android:padding="0dp"
-            android:background="#00000000"/>
+            android:background="@color/transparent"/>
         <TextView
             android:id="@+id/tv_tool_bar_title"
             android:layout_width="match_parent"
@@ -19,6 +19,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:text="测试标题"
+            android:padding="5dp"
             android:textSize="@dimen/toolBar_font_size"
             android:textColor="@color/white"/>
     </LinearLayout>

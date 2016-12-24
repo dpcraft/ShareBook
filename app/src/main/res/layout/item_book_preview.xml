@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:background="@drawable/whitebuttonshape">
+    android:background="@drawable/shape_rectangle_white">
     <ImageView
         android:id="@+id/book_preview_image"
         android:layout_width="wrap_content"

@@ -15,7 +15,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/start_page"
+            android:src="@drawable/image_start_page"
             android:adjustViewBounds="true"/>
     </LinearLayout>
     <RelativeLayout

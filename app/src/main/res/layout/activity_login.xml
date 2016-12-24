@@ -25,7 +25,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/username"
-            android:background="@drawable/editshape"
+            android:background="@drawable/shape_rectangle_edit"
             android:hint="   输入  用户名/手机号"
             android:maxLines="1"/>
     </LinearLayout>
@@ -43,7 +43,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/password"
-            android:background="@drawable/editshape"
+            android:background="@drawable/shape_rectangle_edit"
             android:password="true"
             android:maxLines="1"/>
     </LinearLayout>
@@ -57,7 +57,7 @@
             android:layout_width="250dp"
             android:layout_height="40dp"
             android:id="@+id/login"
-            android:background="@drawable/buttonshape"
+            android:background="@drawable/shape_rectangle_blue"
             android:text="登  录"
             android:textSize="20sp"
             android:textColor="@color/white"/>
@@ -74,7 +74,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/whitebuttonshape"
+            android:background="@drawable/shape_rectangle_white"
             android:text="新用户注册"
             android:textSize="15dp"
             android:textColor="@color/black"/>
@@ -86,7 +86,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/whitebuttonshape"
+            android:background="@drawable/shape_rectangle_white"
             android:text="忘记密码"
             android:textSize="15dp"
             android:textColor="@color/black"/>
@@ -101,7 +101,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/line"/>
+            android:background="@drawable/shape_line"/>
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -112,15 +112,15 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/line"/>
+            android:background="@drawable/shape_line"/>
     </LinearLayout>
     <Button
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_gravity="center"
         android:id="@+id/wechat_login"
-        android:background="@drawable/whitebuttonshape"
-        android:drawableTop="@drawable/wechat"
+        android:background="@drawable/shape_rectangle_white"
+        android:drawableTop="@drawable/ic_wechat"
         android:text="微信登录"
         android:textSize="12sp"
         android:textColor="@color/black"/>

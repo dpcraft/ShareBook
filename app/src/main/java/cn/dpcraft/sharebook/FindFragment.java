@@ -2,8 +2,6 @@ package cn.dpcraft.sharebook;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Gravity;
@@ -12,14 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.RadioButton;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Objects;
 
 /**
  * Created by DPC on 2016/12/6.
@@ -47,7 +41,7 @@ public class FindFragment extends Fragment{
     @Override
     public void onAttach(Activity activity){
         super.onAttach(activity);
-        bookAdapter = new BookAdapter(activity,R.layout.book_preview_item,bookPreviewList);
+        bookAdapter = new BookAdapter(activity,R.layout.item_book_preview,bookPreviewList);
 
     }
     @Override
@@ -85,11 +79,11 @@ public class FindFragment extends Fragment{
         listView = (ListView)getActivity().findViewById(R.id.find_page_filtration_list);
         ArrayList<ListItem> list_GroupItem = new ArrayList<ListItem>();
         UniversalAdapter mAdapter_ListGroup = new UniversalAdapter(getActivity(), list_GroupItem);
-        mAdapter_ListGroup.AddType(R.layout.price_item);
-        mAdapter_ListGroup.AddType(R.layout.deal_type_item);
-        mAdapter_ListGroup.AddType(R.layout.book_type_title_item);
-        mAdapter_ListGroup.AddType(R.layout.book_type_item);
-        mAdapter_ListGroup.AddType(R.layout.drawer_button_item);
+        mAdapter_ListGroup.AddType(R.layout.item_price);
+        mAdapter_ListGroup.AddType(R.layout.item_deal_type);
+        mAdapter_ListGroup.AddType(R.layout.item_book_type_title);
+        mAdapter_ListGroup.AddType(R.layout.item_book_type);
+        mAdapter_ListGroup.AddType(R.layout.item_drawer_button);
         listView.setAdapter(mAdapter_ListGroup);
         list_GroupItem.add(new ListItem(0, getHashMap0()));
         list_GroupItem.add(new ListItem(1, getHashMap0()));

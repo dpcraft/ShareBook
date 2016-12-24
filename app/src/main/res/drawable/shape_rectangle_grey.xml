@@ -6,6 +6,9 @@
         android:topRightRadius="8px"
         android:bottomRightRadius="8px"
         android:bottomLeftRadius="8px"/>
-    <solid android:color="@color/light_green"/>
+    <solid android:color="@color/grey" />
+
+
+
 
 </shape>

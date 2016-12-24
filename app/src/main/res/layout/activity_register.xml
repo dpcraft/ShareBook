@@ -24,7 +24,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/username"
-            android:background="@drawable/editshape"
+            android:background="@drawable/shape_rectangle_edit"
             android:textColor="@color/black"
             android:maxLines="1"/>
     </LinearLayout>
@@ -42,7 +42,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/password"
-            android:background="@drawable/editshape"
+            android:background="@drawable/shape_rectangle_edit"
             android:textColor="@color/black"
             android:password="true"
             android:maxLines="1"/>
@@ -61,7 +61,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/check_password"
-            android:background="@drawable/editshape"
+            android:background="@drawable/shape_rectangle_edit"
             android:textColor="@color/black"
             android:password="true"
             android:maxLines="1"/>
@@ -81,7 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="5"
             android:id="@+id/phone_number"
-            android:background="@drawable/editshape"
+            android:background="@drawable/shape_rectangle_edit"
             android:textColor="@color/black"
             android:phoneNumber="true"
             android:password="true"
@@ -91,7 +91,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:background="@drawable/buttonshape"
+            android:background="@drawable/shape_rectangle_blue"
             android:text="获取验证码"
             android:textSize="14dp"
             android:textColor="@color/white"/>
@@ -110,7 +110,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/verfcode"
-            android:background="@drawable/editshape"
+            android:background="@drawable/shape_rectangle_edit"
             android:textColor="@color/black"
             android:password="true"
             android:maxLines="1"/>
@@ -125,7 +125,7 @@
             android:layout_width="250dp"
             android:layout_height="40dp"
             android:id="@+id/login"
-            android:background="@drawable/buttonshape"
+            android:background="@drawable/shape_rectangle_blue"
             android:text="提  交"
             android:textSize="20sp"
             android:textColor="@color/white"/>

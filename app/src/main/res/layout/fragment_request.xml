@@ -17,7 +17,7 @@
                 android:layout_margin="7dp"
                 android:padding="5dp"
                 android:drawableLeft="@drawable/ic_search"
-                android:background="@drawable/whitebuttonshape"
+                android:background="@drawable/shape_rectangle_white"
                 android:hint="书名/关键词"
                 android:textColorHint="@color/hint_color"
                 android:textSize="@dimen/traditional_font_size"/>

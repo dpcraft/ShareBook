@@ -29,7 +29,7 @@
         android:padding="5dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:background="@drawable/whitebuttonshape"
+        android:background="@drawable/shape_rectangle_white"
         android:hint="书名/关键词"
         android:textSize="@dimen/traditional_font_size"
         android:textColor="@color/black"
@@ -43,13 +43,13 @@
         android:layout_gravity="center"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:background="@drawable/redbuttonshape"
+        android:background="@drawable/shape_rectangle_red"
         android:text="搜索"
         android:textSize="@dimen/traditional_font_size"
         android:textColor="@color/white"
         />
    </LinearLayout>
-   <include layout="@layout/search_spinner_item" />
+   <include layout="@layout/item_search_spinner" />
     <ListView
         android:id="@+id/lv_after_search"
         android:layout_width="match_parent"

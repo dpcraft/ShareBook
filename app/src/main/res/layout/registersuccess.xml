@@ -9,7 +9,7 @@
     android:layout_width="50pt"
     android:layout_height="50pt"
     android:layout_gravity="center"
-    android:background="@drawable/register_success"/>
+    android:background="@drawable/ic_register_success"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="50pt"

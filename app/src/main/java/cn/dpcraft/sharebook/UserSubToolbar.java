@@ -14,7 +14,7 @@ import android.widget.LinearLayout;
 public class UserSubToolbar extends LinearLayout {
     public UserSubToolbar(Context context, AttributeSet attrs){
         super(context,attrs);
-        LayoutInflater.from(context).inflate(R.layout.user_sub_toolbar_item,this);
+        LayoutInflater.from(context).inflate(R.layout.include_user_sub_toolbar,this);
         Button buttonTitileBack = (Button)findViewById(R.id.tool_bar_button_back);
         buttonTitileBack.setOnClickListener(new OnClickListener() {
             @Override

@@ -22,7 +22,7 @@
             android:id="@+id/et_book_name"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/editshape"
+            android:background="@drawable/shape_rectangle_edit"
             android:textColor="@color/black"
             android:maxLines="1"/>
     </LinearLayout>
@@ -74,7 +74,7 @@
             android:id="@+id/et_book_price"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/editshape"
+            android:background="@drawable/shape_rectangle_edit"
             android:textColor="@color/black"
             android:maxLines="1"/>
     </LinearLayout>
@@ -92,7 +92,7 @@
             android:id="@+id/et_cash_pledge"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/editshape"
+            android:background="@drawable/shape_rectangle_edit"
             android:textColor="@color/black"
             android:maxLines="1"/>
     </LinearLayout>
@@ -110,7 +110,7 @@
             android:id="@+id/et_period"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/editshape"
+            android:background="@drawable/shape_rectangle_edit"
             android:textColor="@color/black"
             android:maxLines="1"/>
     </LinearLayout>
@@ -128,7 +128,7 @@
             android:id="@+id/et_comment"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/editshape"
+            android:background="@drawable/shape_rectangle_edit"
             android:textColor="@color/black"
            android:maxLength="100"/>
     </LinearLayout>
@@ -148,14 +148,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="4"
             android:phoneNumber="true"
-            android:background="@drawable/editshape"
+            android:background="@drawable/shape_rectangle_edit"
             android:maxLines="1"/>
         <Button
             android:id="@+id/Bottom_get_verf_code"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:background="@drawable/buttonshape"
+            android:background="@drawable/shape_rectangle_blue"
             android:text="获取验证码"
             android:textSize="14dp"
             android:textColor="@color/white"/>
@@ -174,7 +174,7 @@
             android:id="@+id/et_verf_code"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/editshape"
+            android:background="@drawable/shape_rectangle_edit"
             android:textColor="@color/black"
             android:maxLines="1"/>
     </LinearLayout>
@@ -188,7 +188,7 @@
             android:layout_width="250dp"
             android:layout_height="40dp"
             android:id="@+id/login"
-            android:background="@drawable/buttonshape"
+            android:background="@drawable/shape_rectangle_blue"
             android:text="提  交"
             android:textSize="@dimen/traditional_font_size"
             android:textColor="@color/white"/>
